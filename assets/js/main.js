@@ -115,3 +115,37 @@ sections.forEach(current =>{
 }
 
 window.addEventListener('scroll', scrollActive)
+
+
+
+let currentIndex = 0;
+const imagenes = [
+    "img/web1.png",  // Primera imagen
+    "img/web2.png",  // Segunda imagen
+    "img/web3.png",   // Tercera imagen
+    "img/web4.png",
+    "img/web5.png",
+    "img/web6.png",   
+    "img/web7.png",
+    "img/web8.png",
+];
+const imagenElement = document.getElementById("imagen");
+
+function cambiarImagen() {
+    // Eliminar la clase 'visible' de la imagen actual para que se desvanezca
+    imagenElement.classList.remove('visible');
+
+    // Cambiar la fuente de la imagen
+    imagenElement.src = imagenes[currentIndex];
+
+    // Esperamos un pequeño retraso antes de aplicar la clase 'visible' para el desvanecimiento
+    setTimeout(() => {
+        imagenElement.classList.add('visible');
+    }, 200); // Retraso de 200 ms para que la transición sea más fluida
+
+    // Actualizar el índice (circular)
+    currentIndex = (currentIndex + 1) % imagenes.length;
+}
+
+// Cambiar la imagen cada 6 segundos (1200 ms)
+setInterval(cambiarImagen, 1200);
