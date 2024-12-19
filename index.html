@@ -20,7 +20,7 @@
     <!-- --------------- HEADER --------------- -->
       <nav id="header">
         <div class="nav-logo">
-            <p class="nav-name">AM</p>
+            <p class="nav-name">A-M</p>
             <span>.</span>
         </div>
         <div class="nav-menu" id="myNavMenu">
@@ -87,208 +87,932 @@
 
        </section>
        <!-- -------------- ABOUT BOX ---------------- -->
-       <section class="section" id="about">
-          <div class="top-header">
-            <h1>Acerca de mí</h1>
-          </div>
-          <div class="row">
-            <div class="col">
-                <div class="about-info">
-                    <h3>Mi Introducción</h3>
-                    <p>Tengo amplia experiencia en desarrollo, diseño y herramientas tecnológicas avanzadas, lo que me permite crear soluciones interactivas y personalizadas. También he trabajado con sistemas de gestión de contenido (CMS) como WordPress.
-                    </p>
-                    <div class="about-btn">
-                        <a href="img/cv.pdf"><button class="btn">Descargar CV <i class="uil uil-import"></i></button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="skills-box">
-                    <div class="skills-header">
-                        <h3>Frontend</h3>
-                    </div>
-                    <div class="skills-list">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>Bootstrap</span>
-                        <span>JavaScript</span>
-                        <span>Vue</span>
-                        <span>React</span>
-                        <span>Angular</span>
-                    </div>
-                </div>
-                <div class="skills-box">
-                    <div class="skills-header">
-                        <h3>Backend</h3>
-                    </div>
-                    <div class="skills-list">
-                        <span>PHP</span>
-                        <span>JAVA</span>
-                        <span>Python</span>
-                        <span>C++</span>
-                    </div>
-                </div>
-                <div class="skills-box">
-                    <div class="skills-header">
-                        <h3>Database</h3>
-                    </div>
-                    <div class="skills-list">
-                        <span>MySQL</span>
-                        <span>PostgreSQL</span>
-                        <span>MongoDB</span>
-                    </div>
-                </div>
+       <section class="section-about-elite" id="about">
+        <div class="top-header-about-elite">
+          <h1 class="about-title-elite">Acerca de mí</h1>
+        </div>
+        <div class="about-row-elite">
+          <div class="about-col-elite">
+            <div class="about-info-elite">
+              <h3 class="about-subtitle-elite">Mi Introducción</h3>
+              <p class="about-description-elite">
+                Tengo amplia experiencia en desarrollo, diseño y herramientas tecnológicas avanzadas, lo que me permite crear soluciones interactivas y personalizadas. También he trabajado con sistemas de gestión de contenido (CMS) como WordPress.
+              </p>
+              <div class="about-btn-elite">
+                <a href="img/cv.pdf" download>
+                  <button class="btn-elite">Descargar CV <i class="uil uil-import"></i></button>
+                </a>
+              </div>
             </div>
           </div>
-       </section>
+          <div class="about-col-elite">
+            <div class="skills-container-elite">
+              <div class="skills-box-elite">
+                <h3 class="skills-header-elite">Frontend</h3>
+                <div class="skills-list-elite">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>Bootstrap</span>
+                  <span>JavaScript</span>
+                  <span>Vue</span>
+                  <span>React</span>
+                  <span>Angular</span>
+                </div>
+              </div>
+              <div class="skills-box-elite">
+                <h3 class="skills-header-elite">Backend</h3>
+                <div class="skills-list-elite">
+                  <span>PHP</span>
+                  <span>JAVA</span>
+                  <span>Python</span>
+                  <span>C++</span>
+                </div>
+              </div>
+              <div class="skills-box-elite">
+                <h3 class="skills-header-elite">Database</h3>
+                <div class="skills-list-elite">
+                  <span>MySQL</span>
+                  <span>PostgreSQL</span>
+                  <span>MongoDB</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <style>
+        .section-about-elite {
+          padding: 60px 20px;
+          background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+          border-radius: 20px;
+          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+          position: relative;
+          overflow: hidden;
+        }
+      
+        .section-about-elite::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: radial-gradient(circle at center, rgba(255, 255, 255, 0.3), transparent);
+          z-index: 0;
+          pointer-events: none;
+        }
+      
+        .top-header-about-elite {
+          text-align: center;
+          margin-bottom: 40px;
+          z-index: 1;
+          position: relative;
+        }
+      
+        .about-title-elite {
+          font-size: 3rem;
+          font-weight: 600;
+          color: #34495e;
+          text-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+        }
+      
+        .about-row-elite {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          gap: 30px;
+          z-index: 1;
+          position: relative;
+        }
+      
+        .about-col-elite {
+          flex: 1 1 45%;
+          max-width: 45%;
+          min-width: 280px;
+          z-index: 1;
+        }
+      
+        @media (max-width: 768px) {
+          .about-col-elite {
+            flex: 1 1 100%;
+            max-width: 100%;
+          }
+        }
+      
+        .about-info-elite {
+          background: #ffffff;
+          padding: 20px;
+          border-radius: 15px;
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+      
+        .about-subtitle-elite {
+          font-size: 2rem;
+          color: #2c3e50;
+          margin-bottom: 15px;
+        }
+      
+        .about-description-elite {
+          font-size: 1rem;
+          line-height: 1.6;
+          color: #7f8c8d;
+          margin-bottom: 20px;
+        }
+      
+        .btn-elite {
+          background: linear-gradient(135deg, #6dd5ed, #2193b0);
+          color: #fff;
+          padding: 12px 25px;
+          border: none;
+          border-radius: 10px;
+          font-size: 1rem;
+          cursor: pointer;
+          transition: all 0.3s;
+        }
+      
+        .btn-elite:hover {
+          background: linear-gradient(135deg, #2193b0, #6dd5ed);
+          transform: translateY(-5px);
+          box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+      
+        .skills-container-elite {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+      
+        .skills-box-elite {
+          background: #ffffff;
+          padding: 20px;
+          border-radius: 15px;
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+      
+        .skills-header-elite {
+          font-size: 1.8rem;
+          margin-bottom: 10px;
+          color: #34495e;
+        }
+      
+        .skills-list-elite {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+        }
+      
+        .skills-list-elite span {
+          background: #ecf0f1;
+          padding: 8px 15px;
+          border-radius: 8px;
+          font-size: 0.9rem;
+          color: #34495e;
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+          transition: all 0.3s;
+        }
+      
+        .skills-list-elite span:hover {
+          background: #3498db;
+          color: #fff;
+          transform: scale(1.1);
+        }
+      
+        @media (max-width: 768px) {
+          .about-row-elite {
+            flex-direction: column;
+          }
+        }
+      </style>
+      
+      
 
        <!-- -------------- PROJECT BOX ---------------- -->
 
        <section class="section" id="projects">
-          <div class="top-header">
-              <h1>Proyectos</h1>
+        <div class="top-header-projects">
+          <h1 class="projects-title">Proyectos</h1>
+        </div>
+        <div class="project-carousel-container">
+          <div class="project-carousel">
+            <div class="project-box-modern">
+              <i class="uil uil-briefcase-alt"></i>
+              <h3>Terminado</h3>
+              <label>13+ Proyectos terminados</label>
+            </div>
+            <div class="project-box-modern">
+              <i class="uil uil-users-alt"></i>
+              <h3>Clientes</h3>
+              <label>12+ Clientes felices</label>
+            </div>
+            <div class="project-box-modern">
+              <i class="uil uil-award"></i>
+              <h3>Experiencia</h3>
+              <label>3+ Años en el campo</label>
+            </div>
+            <div class="project-box-modern">
+              <i class="uil uil-briefcase-alt"></i>
+              <h3>Terminado</h3>
+              <label>13+ Proyectos terminados</label>
+            </div>
+            <div class="project-box-modern">
+              <i class="uil uil-users-alt"></i>
+              <h3>Clientes</h3>
+              <label>12+ Clientes felices</label>
+            </div>
           </div>
-          <div class="project-container">
-            <div class="project-box">
-                <i class="uil uil-briefcase-alt"></i>
-                <h3>Terminado</h3>
-                <label>13+ Proyectos terminados</label>
-            </div>
-            <div class="project-box">
-                <i class="uil uil-users-alt"></i>
-                <h3>Clientes</h3>
-                <label>12+ Clientes felices</label>
-            </div>
-            <div class="project-box">
-                <i class="uil uil-award"></i>
-                <h3>Experiencia</h3>
-                <label>3+ Años en el campo</label>
-            </div>
-          </div>
-       </section>
+        </div>
+      </section>
+      
+      <style>
+        .top-header-projects {
+          text-align: center;
+          margin-bottom: 50px;
+        }
+      
+        .projects-title {
+          font-size: 4rem;
+          font-weight: 900;
+          color: #2c3e50;
+          text-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+          margin-bottom: 50px;
+        }
+      
+        .project-carousel-container {
+          overflow: hidden;
+          position: relative;
+          width: 100%;
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+      
+        .project-carousel {
+          display: flex;
+          gap: 20px;
+          animation: slide 20s linear infinite;
+          will-change: transform;
+        }
+      
+        .project-box-modern {
+          text-align: center;
+          padding: 40px;
+          background: linear-gradient(135deg, #ffffff, #f8fafc);
+          border-radius: 20px;
+          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+          flex: 0 0 300px;
+          max-width: 300px;
+          position: relative;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+      
+        .project-box-modern:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+      
+        .project-box-modern i {
+          font-size: 4rem;
+          color: #1abc9c;
+          margin-bottom: 20px;
+          animation: pulse 2s infinite ease-in-out;
+        }
+      
+        @keyframes pulse {
+          0%, 100% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.1);
+          }
+        }
+      
+        .project-box-modern h3 {
+          font-size: 2rem;
+          color: #34495e;
+          margin-bottom: 10px;
+        }
+      
+        .project-box-modern label {
+          font-size: 1.2rem;
+          color: #7f8c8d;
+        }
+      
+        @keyframes slide {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-100%);
+          }
+        }
+      
+        @media (max-width: 768px) {
+          .projects-title {
+            font-size: 3.5rem;
+          }
+      
+          .project-box-modern {
+            padding: 30px;
+          }
+        }
+      
+        @media (max-width: 480px) {
+          .projects-title {
+            font-size: 3rem;
+          }
+      
+          .project-box-modern {
+            padding: 20px;
+          }
+      
+          .project-box-modern i {
+            font-size: 3.5rem;
+          }
+      
+          .project-box-modern h3 {
+            font-size: 1.8rem;
+          }
+      
+          .project-box-modern label {
+            font-size: 1.1rem;
+          }
+        }
+      </style>
+      
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const carousel = document.querySelector(".project-carousel");
+          const cloneCarousel = carousel.innerHTML;
+          carousel.innerHTML += cloneCarousel;
+        });
+      </script>
+      
 
 
 
        <!-- SECCION PORTFOLIO -->
-    <section id="portfolio" class="portfolio">
-        <div class="contenido-seccion">
-            <h2>Echa un Vistazo</h2>
-            <div class="galeria">
-                <div class="proyecto">
-                    <a href="https://lunaelectric.lat/" target="_blank">
-                        <img id="imagen" src="img/web1.png" alt="Web Comercial">
-                        <div class="overlay">
-                            <h3>Web Comercial</h3>
-                            <p>Luna Electric</p>
-                        </div>
-                    </a>
+       <section id="portfolio" class="portfolio-modern">
+        <div class="contenido-seccion-modern">
+          <h2 class="portfolio-title-modern">Echa un Vistazo</h2>
+          <div class="galeria-modern">
+            <div class="proyecto-modern">
+              <a href="https://lunaelectric.lat/" target="_blank">
+                <img id="imagen-modern" src="img/web1.png" alt="Web Comercial">
+                <div class="overlay-modern">
+                  <h3>Web Comercial</h3>
+                  <p>Luna Electric</p>
                 </div>
-                
-                <div class="proyecto">
-                    <img src="img/p2.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p3.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p4.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p5.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p6.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
+              </a>
             </div>
+      
+            <div class="proyecto-modern">
+              <img src="img/p2.jpg" alt="">
+              <div class="overlay-modern">
+                <h3>Diseño Creativo</h3>
+                <p>Fotografía</p>
+              </div>
+            </div>
+            <div class="proyecto-modern">
+              <img src="img/p3.jpg" alt="">
+              <div class="overlay-modern">
+                <h3>Diseño Creativo</h3>
+                <p>Fotografía</p>
+              </div>
+            </div>
+            <div class="proyecto-modern">
+              <img src="img/p4.jpg" alt="">
+              <div class="overlay-modern">
+                <h3>Diseño Creativo</h3>
+                <p>Fotografía</p>
+              </div>
+            </div>
+            <div class="proyecto-modern">
+              <img src="img/p5.jpg" alt="">
+              <div class="overlay-modern">
+                <h3>Diseño Creativo</h3>
+                <p>Fotografía</p>
+              </div>
+            </div>
+            <div class="proyecto-modern">
+              <img src="img/p6.jpg" alt="">
+              <div class="overlay-modern">
+                <h3>Diseño Creativo</h3>
+                <p>Fotografía</p>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
+      
+      <style>
+        .portfolio-modern {
+          padding: 80px 20px;
+          background: linear-gradient(145deg, #e3e9f3, #d0d7e4);
+          border-radius: 30px;
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+      
+        .contenido-seccion-modern {
+          text-align: center;
+          margin-bottom: 50px;
+        }
+      
+        .portfolio-title-modern {
+          font-size: 3rem;
+          font-weight: 700;
+          color: #34495e;
+          margin-bottom: 50px;
+          text-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+      
+        .galeria-modern {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+          gap: 25px;
+          justify-content: center;
+        }
+      
+        .proyecto-modern {
+          position: relative;
+          overflow: hidden;
+          border-radius: 20px;
+          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+          transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+      
+        .proyecto-modern:hover {
+          transform: translateY(-10px) scale(1.02);
+          box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+        }
+      
+        .proyecto-modern img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+          border-radius: 20px;
+          transition: transform 0.4s ease;
+        }
+      
+        .proyecto-modern:hover img {
+          transform: scale(1.1);
+        }
+      
+        .overlay-modern {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.7);
+          color: #ffffff;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          opacity: 0;
+          transition: opacity 0.4s ease;
+          border-radius: 20px;
+        }
+      
+        .proyecto-modern:hover .overlay-modern {
+          opacity: 1;
+        }
+      
+        .overlay-modern h3 {
+          font-size: 1.8rem;
+          margin-bottom: 10px;
+          text-shadow: 0 4px 8px rgb(14, 212, 103);
+        }
+      
+        .overlay-modern p {
+          font-size: 1.2rem;
+          text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+      
+        @media (max-width: 768px) {
+          .portfolio-title-modern {
+            font-size: 2.5rem;
+          }
+      
+          .overlay-modern h3 {
+            font-size: 1.5rem;
+          }
+      
+          .overlay-modern p {
+            font-size: 1rem;
+          }
+        }
+      
+        @media (max-width: 480px) {
+          .portfolio-title-modern {
+            font-size: 2rem;
+          }
+      
+          .overlay-modern h3 {
+            font-size: 1.2rem;
+          }
+      
+          .overlay-modern p {
+            font-size: 0.9rem;
+          }
+        }
+      </style>
+      
 
        <!-- -------------- CONTACT BOX ---------------- -->
 
        <section class="section" id="contact">
-          <div class="top-header">
-            <h1>Ponte en contacto</h1>
-            <span>¿Tienes un proyecto en mente? Contáctame aquí</span>
+        <div class="top-header-premium">
+            <h1 class="section-title-premium">Ponte en contacto</h1>
+            <p class="section-subtitle-premium">¿Tienes un proyecto en mente? Contáctame aquí</p>
           </div>
-          <div class="row">
-             <div class="col">
-                <div class="contact-info">
-                    <h2>Contactame <i class="uil uil-corner-right-down"></i></h2>
-                    <p><i class="uil uil-envelope"></i> Email: antoniogutierrezmor4@gmail.com</p>
-                    <p><i class="uil uil-phone"></i> Tel: +51 900 992 075</p>
+          
+          <style>
+            .top-header-premium {
+              text-align: center;
+              padding: 50px 25px;
+              margin-bottom: 40px;
+              border-radius: 15px;
+              background: linear-gradient(145deg, #1a2a6c, #b21f1f, #fdbb2d);
+              color: #ffffff;
+              box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+              position: relative;
+              overflow: hidden;
+              animation: glow-animation 6s infinite alternate;
+            }
+          
+            .top-header-premium::before {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 50%;
+              transform: translateX(-50%);
+              width: 120%;
+              height: 120%;
+              background: radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent 70%);
+              z-index: 0;
+              pointer-events: none;
+              animation: rotate-bg 12s linear infinite;
+            }
+          
+            .section-title-premium {
+              font-size: 3rem;
+              font-weight: bold;
+              margin-bottom: 20px;
+              color: #ffffff;
+              text-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+              z-index: 1;
+              position: relative;
+            }
+          
+            .section-subtitle-premium {
+              font-size: 1.3rem;
+              font-weight: 300;
+              color: #f3f4f6;
+              z-index: 1;
+              position: relative;
+            }
+          
+            @media (max-width: 768px) {
+              .top-header-premium {
+                padding: 40px 20px;
+              }
+          
+              .section-title-premium {
+                font-size: 2.4rem;
+              }
+          
+              .section-subtitle-premium {
+                font-size: 1.1rem;
+              }
+            }
+          
+            @media (max-width: 480px) {
+              .top-header-premium {
+                padding: 30px 15px;
+              }
+          
+              .section-title-premium {
+                font-size: 2rem;
+              }
+          
+              .section-subtitle-premium {
+                font-size: 1rem;
+              }
+            }
+          
+            /* Animaciones */
+            @keyframes rotate-bg {
+              from {
+                transform: translateX(-50%) rotate(0deg);
+              }
+              to {
+                transform: translateX(-50%) rotate(360deg);
+              }
+            }
+          
+            @keyframes glow-animation {
+              from {
+                box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 255, 255, 0.2);
+              }
+              to {
+                box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), 0 0 30px rgba(255, 255, 255, 0.3);
+              }
+            }
+          </style>
+          
+        <div class="row">
+           <div class="col">
+            <div class="contact-info">
+                <h2>Contactame <i class="uil uil-corner-right-down"></i></h2>
+                <p><i class="uil uil-envelope"></i> Email: antoniomor42003@gmail.com</p>
+                <p><i class="uil uil-phone"></i> Tel: +51 900 992 075</p>
+            </div>
+         </div>
+          <div class="col">
+            <form id="form" class="form-control">
+              <div class="form-inputs">
+                <div class="input-group">
+                  <input type="text" name="from_name" id="from_name" class="input-field" placeholder="Tu Nombre" required>
                 </div>
-             </div>
-             <div class="col">
-                <div class="form-control">
-                    <div class="form-inputs">
-                        <input type="text" class="input-field" placeholder="Name">
-                        <input type="text" class="input-field" placeholder="Email">
-                    </div>
-                    <div class="text-area">
-                        <textarea placeholder="Message"></textarea>
-                    </div>
-                    <div class="form-button">
-                        <button class="btn">Enviar.. <i class="uil uil-message"></i></button>
-                    </div>
+                <div class="input-group">
+                  <input type="email" name="reply_to" id="reply_to" class="input-field" placeholder="Tu Correo Electrónico" required>
                 </div>
-             </div>
+              </div>
+              <div class="text-area">
+                <textarea name="message" id="message" class="input-textarea" placeholder="Escribe tu mensaje aquí..." required></textarea>
+              </div>
+              <div class="form-button">
+                <button type="submit" id="button" class="btn">Enviar Mensaje.... <i class="uil uil-message"></i></button>
+              </div>
+            </form>
           </div>
-       </section>
+        </div>
+      </section>
+      
+      <style>
+        .form-control {
+          font-family: 'Arial', sans-serif;
+          padding: 20px;
+          border-radius: 10px;
+          background-color: #f9f9f9;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+      
+        .input-field,
+        .input-textarea {
+          width: 100%;
+          padding: 12px;
+          margin-bottom: 15px;
+          border: 1px solid #ddd;
+          border-radius: 8px;
+          font-size: 1rem;
+          transition: border-color 0.3s, box-shadow 0.3s;
+        }
+      
+        .input-field:focus,
+        .input-textarea:focus {
+          border-color: #007bff;
+          box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+          outline: none;
+        }
+      
+        .btn {
+          display: inline-block;
+          padding: 12px 20px;
+          font-size: 1rem;
+          color: #fff;
+          background-color: #007bff;
+          border: none;
+          border-radius: 8px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+        }
+      
+        .btn:hover {
+          background-color: #0056b3;
+        }
+      </style>
+      
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+      <script type="text/javascript">
+        emailjs.init('u9TPydwgsODJFZZ1C');
+      
+        const btn = document.getElementById('button');
+      
+        document.getElementById('form').addEventListener('submit', function(event) {
+          event.preventDefault();
+      
+          btn.textContent = 'Enviando...';
+      
+          const serviceID = 'default_service';
+          const templateID = 'template_q065ffr';
+      
+          emailjs.sendForm(serviceID, templateID, this)
+            .then(() => {
+              btn.textContent = 'Enviar Mensaje';
+              alert('Mensaje enviado correctamente. ¡Gracias por contactarme!');
+              document.getElementById('form').reset();
+            }, (err) => {
+              btn.textContent = 'Enviar Mensaje';
+              alert('Error al enviar el mensaje: ' + JSON.stringify(err));
+            });
+        });
+      </script>
+      
 
     </main>
 
 
     <!-- --------------- FOOTER --------------- -->
-    <footer>
-        <div class="top-footer">
-            <p>Antonio Mora .</p>
+    <footer class="footer-elevated">
+        <div class="top-footer-elevated">
+          <p class="footer-title-elevated">Antonio Mora</p>
         </div>
-        <div class="middle-footer">
-            <ul class="footer-menu">
-                <li class="footer_menu_list">
-                    <a href="#home">Inicio</a>
-                </li>
-                <li class="footer_menu_list">
-                    <a href="#about">Acerca</a>
-                </li>
-                <li class="footer_menu_list">
-                    <a href="#projects">Proyectos</a>
-                </li>
-                <li class="footer_menu_list">
-                    <a href="#contact">Contacto</a>
-                </li>
-            </ul>
+      
+        <div class="middle-footer-elevated">
+          <ul class="footer-menu-elevated">
+            <li class="footer-menu-list-elevated">
+              <a href="#home">Inicio</a>
+            </li>
+            <li class="footer-menu-list-elevated">
+              <a href="#about">Acerca</a>
+            </li>
+            <li class="footer-menu-list-elevated">
+              <a href="#projects">Proyectos</a>
+            </li>
+            <li class="footer-menu-list-elevated">
+              <a href="#contact">Contacto</a>
+            </li>
+          </ul>
         </div>
-        <div class="footer-social-icons">
-            <div class="icon"><i class="uil uil-instagram"></i></div>
-            <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
-            <div class="icon"><i class="uil uil-dribbble"></i></div>
-            <div class="icon"><i class="uil uil-github-alt"></i></div>
+      
+        <div class="footer-social-icons-elevated">
+          <a href="https://www.instagram.com" target="_blank" class="icon-elevated" title="Instagram">
+            <i class="uil uil-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com" target="_blank" class="icon-elevated" title="Facebook">
+            <i class="uil uil-facebook"></i>
+          </a>
+          <a href="https://www.linkedin.com" target="_blank" class="icon-elevated" title="LinkedIn">
+            <i class="uil uil-linkedin-alt"></i>
+          </a>
+          <a href="https://github.com" target="_blank" class="icon-elevated" title="GitHub">
+            <i class="uil uil-github-alt"></i>
+          </a>
+          <a href="https://www.fiverr.com" target="_blank" class="icon-elevated" title="Fiverr">
+            <i class="uil uil-dribbble"></i>
+          </a>
+          <a href="https://www.upwork.com" target="_blank" class="icon-elevated" title="Upwork">
+            <i class="uil uil-briefcase"></i>
+          </a>
         </div>
-        <div class="bottom-footer">
-            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Antonio Mora</a> - Reservados todos los derechos</p>
+      
+        <div class="bottom-footer-elevated">
+          <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Antonio Mora</a> - Reservados todos los derechos</p>
         </div>
-    </footer>
+      </footer>
+      
+      <style>
+        .footer-elevated {
+          background: linear-gradient(145deg, #2a3b4c, #1a2530);
+          color: #e6e9ef;
+          font-family: 'Roboto', sans-serif;
+          padding: 60px 30px;
+          text-align: center;
+          position: relative;
+          overflow: hidden;
+          box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+          border-radius: 20px;
+        }
+      
+        .footer-elevated::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: radial-gradient(circle at center, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0));
+          pointer-events: none;
+          z-index: 1;
+        }
+      
+        .footer-title-elevated {
+          font-size: 2.5rem;
+          font-weight: bold;
+          margin-bottom: 30px;
+          color: #ffffff;
+          text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+      
+        .footer-menu-elevated {
+          list-style: none;
+          padding: 0;
+          margin: 30px 0;
+          display: flex;
+          justify-content: center;
+          gap: 40px;
+          flex-wrap: wrap;
+          z-index: 2;
+        }
+      
+        .footer-menu-list-elevated a {
+          color: #e6e9ef;
+          text-decoration: none;
+          font-size: 1.2rem;
+          font-weight: 600;
+          transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+      
+        .footer-menu-list-elevated a:hover {
+          color: #00cec9;
+          text-shadow: 0 0 8px rgba(0, 206, 201, 0.7);
+          transform: scale(1.1);
+        }
+      
+        .footer-social-icons-elevated {
+          margin: 40px 0;
+          display: flex;
+          justify-content: center;
+          gap: 25px;
+          flex-wrap: wrap;
+          z-index: 2;
+        }
+      
+        .icon-elevated {
+          color: #e6e9ef;
+          font-size: 2rem;
+          transition: transform 0.4s ease, color 0.3s ease-in-out;
+          z-index: 2;
+        }
+      
+        .icon-elevated:hover {
+          color: #00cec9;
+          transform: scale(1.3) rotate(10deg);
+        }
+      
+        .bottom-footer-elevated {
+          margin-top: 40px;
+          font-size: 1rem;
+          color: #b0bec5;
+          z-index: 2;
+        }
+      
+        .bottom-footer-elevated a {
+          color: #e6e9ef;
+          text-decoration: none;
+          font-weight: bold;
+          transition: color 0.3s ease-in-out;
+        }
+      
+        .bottom-footer-elevated a:hover {
+          color: #00cec9;
+        }
+      
+        @media (max-width: 768px) {
+          .footer-menu-elevated {
+            flex-direction: column;
+            gap: 20px;
+          }
+      
+          .footer-social-icons-elevated {
+            gap: 20px;
+          }
+      
+          .footer-title-elevated {
+            font-size: 2rem;
+          }
+      
+          .icon-elevated {
+            font-size: 1.8rem;
+          }
+        }
+      
+        @media (max-width: 480px) {
+          .footer-elevated {
+            padding: 40px 20px;
+          }
+      
+          .footer-title-elevated {
+            font-size: 1.8rem;
+          }
+      
+          .footer-menu-elevated {
+            gap: 15px;
+          }
+      
+          .icon-elevated {
+            font-size: 1.5rem;
+          }
+      
+          .bottom-footer-elevated {
+            font-size: 0.9rem;
+          }
+        }
+      </style>
+      
 
     </div>
 

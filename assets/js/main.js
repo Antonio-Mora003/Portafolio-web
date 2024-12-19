@@ -129,7 +129,7 @@ const imagenes = [
     "img/web7.png",
     "img/web8.png",
 ];
-const imagenElement = document.getElementById("imagen");
+const imagenElement = document.getElementById("imagen-modern");
 
 function cambiarImagen() {
     // Eliminar la clase 'visible' de la imagen actual para que se desvanezca
